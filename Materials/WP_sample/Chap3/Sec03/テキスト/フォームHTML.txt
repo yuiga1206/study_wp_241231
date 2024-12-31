@@ -1,0 +1,21 @@
+<div class="form">
+    <div class="form_group">
+        <label for="your-name">お名前<span>*</span></label>
+        <div>[text* your-name id:your-name]</div>
+    </div>
+    <div class="form_group">
+        <label for="your-email">メールアドレス<span>*</span></label>
+        <div>[email* your-email id:your-email]</div>
+    </div>
+    <div class="form_group">
+        <label for="your-subject">タイトル</label>
+        <div>[text your-subject id:your-subject]</div>
+    </div>
+    <div class="form_group">
+        <label for="your-message">メッセージ</label>
+        <div>[textarea your-message id:your-message]</div>
+    </div>
+    <div class="form_group">
+        <div class="form_btn">[submit class:btn "送信"]</div>
+    </div>
+</div>

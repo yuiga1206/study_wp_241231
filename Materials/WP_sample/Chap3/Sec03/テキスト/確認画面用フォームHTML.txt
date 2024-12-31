@@ -1,0 +1,23 @@
+<div class="form">
+    <div class="form_group">
+        <label for="your-name">お名前<span>*</span></label>
+        <div>[multiform your-name id:your-name]</div>
+    </div>
+    <div class="form_group">
+        <label for="your-email">メールアドレス<span>*</span></label>
+        <div>[multiform your-email id:your-email]</div>
+    </div>
+    <div class="form_group">
+        <label for="your-subject">タイトル</label>
+        <div>[multiform your-subject id:your-subject]</div>
+    </div>
+    <div class="form_group">
+        <label for="your-message">メッセージ</label>
+        <div>[multiform your-message id:your-message]</div>
+    </div>
+    <div class="form_group">
+        <div class="form_btn">[submit class:btn "送信"]</div>
+        <div class="form_btn-back">[previous class:btn "戻る"]</div>
+    </div>
+</div>
+[multistep multistep-thanks last_step send_email "/contact/thanks/"]
