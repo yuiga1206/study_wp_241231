@@ -4,6 +4,7 @@
  */
 add_theme_support('title-tag');
 
+
 /**
  * <title>の区切り文字を変更する
  */

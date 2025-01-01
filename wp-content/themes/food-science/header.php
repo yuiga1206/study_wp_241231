@@ -8,7 +8,7 @@
     wp_enqueue_style('font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css');
     wp_enqueue_style('google-web-fonts', 'https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
     wp_enqueue_script('jquery');
-    wp_enqueue_script('food-science-main', get_template_directory() . '/assets/js/main.js');
+    wp_enqueue_script('food-science-main', get_template_directory_uri() . '/assets/js/main.js');
     wp_head();
   ?>
 </head>
