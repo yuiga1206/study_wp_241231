@@ -24,9 +24,9 @@
       <div class="gnav js-menu">
         <?php
           $args = [
-            'menu' => 'global-navigation',
-            'menu_class' => '',
-            'container' => false,
+            'menu' => 'global-navigation', // 管理画面で作成したメニューの名前
+            'menu_class' => '', // メニューを構成するulタグのクラス名
+            'container' => false, // <ul>タグを囲んでいる<div>タグを削除
           ];
           wp_nav_menu($args);
         ?>

@@ -12,9 +12,9 @@
         <h3>SHARE ON</h3>
         <?php
           $args = [
-            'menu' => 'footer-sns',
-            'menu_class' => '',
-            'container' => false,
+            'menu' => 'footer-sns', // 管理画面で作成したメニューの名前
+            'menu_class' => '', // メニューを構成するulタグのクラス名
+            'container' => false, // <ul>タグを囲んでいる<div>タグを削除
           ];
           wp_nav_menu($args);
         ?>
