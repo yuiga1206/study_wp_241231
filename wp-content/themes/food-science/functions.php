@@ -13,3 +13,9 @@ function my_document_title_separator($separator) {
   $separator = '|';
   return $separator;
 }
+
+
+/**
+ * アイキャッチ画像を使用可能にする
+ */
+add_theme_support('post-thumbnails');
