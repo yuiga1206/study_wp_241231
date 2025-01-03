@@ -39,8 +39,8 @@ jQuery(function($) {
   });
 
   //IE11対応 sitcky
-  if ($(".breadcrumb").length) {
-    var elements = $(".breadcrumb");
-    Stickyfill.add(elements);
-  }
+  // if ($(".breadcrumb").length) {
+  //   var elements = $(".breadcrumb");
+  //   Stickyfill.add(elements);
+  // }
 });
