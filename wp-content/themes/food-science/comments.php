@@ -9,7 +9,7 @@
     <ol class="commentlist">
       <?php
         $wp_list_comments_args = [
-          'avatar_size' => 50,
+          'avatar_size' => '50'
         ];
         wp_list_comments($wp_list_comments_args);
       ?>
