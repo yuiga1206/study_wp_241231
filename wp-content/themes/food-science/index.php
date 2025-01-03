@@ -13,7 +13,7 @@
             <ul class="archive_list">
               <?php
                 $args = [
-                  'title_li' => '',
+                  'title_li' => '', //見出しを削除
                 ];
                 wp_list_categories($args);
               ?>
@@ -25,7 +25,7 @@
             <ul class="archive_list">
               <?php
                 $args = [
-                  'type' => 'yearly',
+                  'type' => 'yearly', //年別を指定
                 ];
                 wp_get_archives($args);
               ?>
@@ -39,6 +39,12 @@
               <?php while(have_posts()): the_post(); ?>
                 <?php get_template_part('template-parts/loop', 'news'); ?>
               <?php endwhile; ?>
+            </div>
+          <?php endif; ?>
+
+          <?php if(function_exists('wp_pagenavi')): ?>
+            <div class="pagination">
+              <?php wp_pagenavi(); ?>
             </div>
           <?php endif; ?>
         </div>
