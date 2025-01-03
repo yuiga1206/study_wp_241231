@@ -25,3 +25,12 @@ add_theme_support('post-thumbnails');
  * カスタムメニュー機能を使用可能にする
  */
 add_theme_support('menus');
+
+
+/**
+ * Contact Form 7のときには整形機能をOFFにする
+ */
+add_filter('wpcf7_autop_or_not', 'my_wpcf7_autop');
+function my_wpcf7_autop() {
+  return false;
+}
