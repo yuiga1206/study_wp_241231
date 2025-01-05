@@ -89,3 +89,21 @@ function my_editor_support() {
   add_theme_support('editor-styles');
   add_editor_style('assets/css/editor-style.css');
 }
+
+
+/**
+ * 表示するブロックをコントロールする
+ */
+// add_filter('allowed_block_types_all', 'my_allowed_block_types_all', 10, 2);
+// function my_allowed_block_types_all($allowed_blocks, $editor_context) {
+//   $allowed_blocks = [
+//     'core/heading', // 見出し
+//     'core/paragraph', // 段落
+//     'core/list', // リスト
+//   ];
+//   // 固定ページの投稿タイプ「page」を指定
+//   if('page' === $editor_context->post->post_type) {
+//     $allowed_blocks[] = 'core/image'; // 画像
+//   }
+//   return $allowed_blocks;
+// }
