@@ -107,3 +107,25 @@ function my_editor_support() {
 //   }
 //   return $allowed_blocks;
 // }
+
+
+/**
+ * 管理者の権限グループを設定する
+ */
+add_action('admin_init', 'my_admin_init');
+function my_admin_init() {
+  // 権限を取得
+  $role = get_role('administrator');
+  // 権限を追加するとき
+  $role->add_cap('edit_foods');
+  $role->add_cap('edit_others_foods');
+  $role->add_cap('edit_private_foods');
+  $role->add_cap('edit_published_foods');
+  $role->add_cap('published_foods');
+  $role->add_cap('read_private_foods');
+  // 権限を削除するとき
+  $role->remove_cap('delete_foods');
+  $role->remove_cap('delete_others_foods');
+  $role->remove_cap('delete_private_foods');
+  $role->remove_cap('delete_published_foods');
+}
