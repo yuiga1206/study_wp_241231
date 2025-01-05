@@ -129,3 +129,32 @@ function my_admin_init() {
   $role->remove_cap('delete_private_foods');
   $role->remove_cap('delete_published_foods');
 }
+
+
+/**
+ * REST APIにカスタムフィールドの値を含ませる
+ */
+add_action('rest_api_init', 'api_register_fields');
+function api_register_fields() {
+  register_rest_field(
+    'food', // 投稿タイプを指定
+    'price', // カスタムフィールドのキーを指定
+    [
+      'get_callback' => 'get_custom_field',
+      'update_callback' => null,
+      'schema' => null
+    ]
+  );
+  register_rest_field(
+    'food', // 投稿タイプを指定
+    'calorie', // カスタムフィールドのキーを指定
+    [
+      'get_callback' => 'get_custom_field',
+      'update_callback' => null,
+      'schema' => null
+    ]
+  );
+}
+function get_custom_field($object, $field_name, $request) {
+  return get_post_meta($object['id'], $field_name, true);
+}

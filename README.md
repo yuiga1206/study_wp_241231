@@ -36,7 +36,9 @@
 	* サポートサイトからダウンロードした教材
 * wp-content/themes/food-science
 	* 書籍通りに、実際に作ったテーマ
-
+### **その他**
+* REST APIのURL
+	* http://localhost/test/241231_wp/wp-json/wp/v2/posts
 
 
 ---
