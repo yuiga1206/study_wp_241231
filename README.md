@@ -8,8 +8,10 @@
 ## **プロジェクト概要**
 ### **情報一覧**
 * テスト環境（ローカル）
-	* URL：http://localhost/test/241231_wp/
-	* WP管理画面：http://localhost/test/241231_wp/wp-login.php
+	* URL
+		* サイトURL：http://localhost/test/241231_wp/
+		* WP管理画面：http://localhost/test/241231_wp/wp-login.php
+		* サイトマップ（Yoast SEO）：http://localhost/test/241231_wp/sitemap_index.xml
 	* ユーザー（ユーザー名 / パスワード）
 		* 管理者：test / test
 		* 編集者：test02 / test
