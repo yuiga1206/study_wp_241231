@@ -6,7 +6,8 @@ Thumbs.db
 
 # wp-admin/
 # wp-includes/
-wp-content/uploads/
+wp-content/
+wp-content/ai1wm-backups/localhost-test-241231wp-20250106-172508-enr36n9840xs.wpress
 # wp-content/themes/twentynineteen/
 # wp-content/themes/twentyseventeen/
 # wp-content/themes/twentysixteen/
