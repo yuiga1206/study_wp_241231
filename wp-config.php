@@ -100,3 +100,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 /** Sets up WordPress vars and included files. */
 require_once ABSPATH . 'wp-settings.php';
+
+// 管理画面の「外観」からのファイル編集を無効にする
+define('DISALLOW_FILE_EDIT', true);
